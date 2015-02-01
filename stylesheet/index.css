@@ -1,0 +1,36 @@
+.pageContent {
+	background-image: url('http://raulsmail.gitgub.io/img/logoBlock_bg.png');
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+.noBorderRadius {
+-webkit-border-top-left-radius: 0!important;
+-moz-border-radius-topleft: 0!important;
+-khtml-border-top-left-radius: 0!important;
+border-top-left-radius: 0!important;
+-webkit-border-top-right-radius: 0!important;
+-moz-border-radius-topright: 0!important;
+-khtml-border-top-right-radius: 0!important;
+border-top-right-radius: 0!important;
+-webkit-border-bottom-left-radius: 0!important;
+-moz-border-radius-bottomleft: 0!important;
+-khtml-border-bottom-left-radius: 0!important;
+border-bottom-left-radius: 0!important;
+-webkit-border-bottom-right-radius: 0!important;
+-moz-border-radius-bottomright: 0!important;
+-khtml-border-bottom-right-radius: 0!important;
+border-bottom-right-radius: 0!important;
+}
+.noBorderRadiusBottom {
+-webkit-border-bottom-left-radius: 0!important;
+-moz-border-radius-bottomleft: 0!important;
+-khtml-border-bottom-left-radius: 0!important;
+border-bottom-left-radius: 0!important;
+-webkit-border-bottom-right-radius: 0!important;
+-moz-border-radius-bottomright: 0!important;
+-khtml-border-bottom-right-radius: 0!important;
+border-bottom-right-radius: 0!important;
+}
+.spigot_colorOverlay {
+background-color: rgba(237, 129, 6, .8);
+}
