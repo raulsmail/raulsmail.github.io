@@ -1,7 +1,74 @@
-.pageContent {
-	background-image: url('//static.spigotmc.org/styles/spigot/style/logoBlock_bg.png');
+#logoBlock .pageContent {
+	background-image: url('http://raulsmail.github.io/img/logoBlock_bg.png');
 	background-repeat: repeat;
 	background-position: 0 0;
+}
+#navigation .pageContent {
+-webkit-box-shadow: 0 1px 0 rgb(204, 204, 204);
+-moz-box-shadow: 0 1px 0 rgb(204, 204, 204);
+-khtml-box-shadow: 0 1px 0 rgb(204, 204, 204);
+box-shadow: 0 1px 0 rgb(204, 204, 204);
+}
+#logo {
+display: block;
+float: left;
+line-height: 136px;
+height: 140px;
+max-width: 100%;
+vertical-align: middle;
+}
+#navigation .navTabs, .breadcrumb, .uix_breadCrumb_toggleList li.toggleList_item {
+background: #ed8106 -moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+background: #ed8106 -webkit-gradient(linear, left top, left bottom, color-stop(0%,url(rgba.php?r=255&g=255&b=255&a=51)), color-stop(100%,rgba(255,255,255,0)));
+background: #ed8106 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.2)), color-stop(100%,rgba(255,255,255,0)));
+_filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFFFFF,endColorstr=#33FFFFFF);
+background: #ed8106 -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+background: #ed8106 -o-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+background: #ed8106 -ms-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+background: #ed8106 linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.navTabs .publicTabs {
+float: left;
+}
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+.spigot_headerReadAboutWrapper {
+background: #2a2f35 url('http://raulsmail.github.io/img/userBar_bg.png') repeat;
+padding: 8px 16px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+-khtml-border-radius: 6px;
+border-radius: 6px;
+font-weight: bold;
+color: #FFFFFF;
+text-shadow: 0 1px rgba(0,0,0,.2);
+max-width: 300px;
+line-height: 20px;
+float: right;
+margin-top: 40px;
+border-top: solid 1px rgb(255,255,255);
+border-top: solid 1px rgba(255,255,255, .3);
+_border-top: solid 1px rgb(255,255,255);
+border-bottom: 3px solid #30353b;
+}
+.pageWidth {
+margin-right: auto;
+margin-left: auto;
+_width: 976px;
+_margin: 0 auto;
+max-width: 1170px;
 }
 .noBorderRadius {
 -webkit-border-top-left-radius: 0!important;
@@ -30,6 +97,16 @@ border-bottom-left-radius: 0!important;
 -moz-border-radius-bottomright: 0!important;
 -khtml-border-bottom-right-radius: 0!important;
 border-bottom-right-radius: 0!important;
+}
+.noBorderRadiusTop {
+-webkit-border-top-left-radius: 0!important;
+-moz-border-radius-topleft: 0!important;
+-khtml-border-top-left-radius: 0!important;
+border-top-left-radius: 0!important;
+-webkit-border-top-right-radius: 0!important;
+-moz-border-radius-topright: 0!important;
+-khtml-border-top-right-radius: 0!important;
+border-top-right-radius: 0!important;
 }
 .spigot_colorOverlay {
 background-color: rgba(237, 129, 6, .8);
