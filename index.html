@@ -1,115 +1,118 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>raulsmail's Web - Home</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet/index1.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet/index2.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet/index3.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>raulsmail.github.io</title>
+
+    <!--<link rel="shortcut icon" href="assets/images/favicon.png">-------------------------------------------------------->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
-<div id="header">
-<div id="logoBlock">
-<div class="pageContent noBorderRadiusBottom noBorderRadius">
-<div class="spigot_colorOverlay">
-<div class="pageWidth">
-<div id="logo"><a href="http://raulsmail.github.io/">
-<span></span>
-<img src="http://raulsmail.github.io/img/spigot.png" alt="raulsmail's Web - Home">
-</a></div>
-<div class="spigot_headerReadAboutWrapper">
-<p>Want a Spigot or Bukkit plugin? <br> Read about me <a href="http://raulsmail.github.io/about.html">here</a>!</p>
-</div>
-<span class="helper"></span>
-</div>
-</div>
-</div>
-</div>
-<div id="navigation" class="withSearch ">
-<div class="uix_navigationWrapper">
-<div class="pageContent noBorderRadiusTop noBorderRadius">
-<nav>
-<div class="navTabs">
-<div class="pageWidth">
-<ul class="publicTabs left">
- 
- 
-<li class="navTab portal selected">
-<a href="http://www.spigotmc.org/" class="navLink">Home</a>
-<a href="http://www.spigotmc.org/" class="SplitCtrl" rel="Menu"></a>
-<div class="tabLinks portalTabLinks">
-<div class="primaryContent menuHeader">
-<h3>Home</h3>
-<div class="muted">Quick Links</div>
-</div>
-<ul class="secondaryContent blockLinksList">
-<li><a href="recent-activity/">Recent Activity</a></li>
-<li><a href="find-new/threads">What's New?</a></li>
-<li><a href="help/">Help</a></li>
-</ul>
-</div>
-</li>
- 
-<li class="navTab forums Popup PopupControl PopupClosed PopupContainerControl">
-<a href="http://www.spigotmc.org/forums/" class="navLink">Forums</a>
-<a href="http://www.spigotmc.org/forums/" class="SplitCtrl" rel="Menu"></a>
+<!-- Navbar
+-------------------------------------------------------->
+<div style="background-color: #21ccb5;">
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">raulsmail.github.io</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="https://github.com/raulsmail">Github</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">HubEssentials <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://github.com/raulsmail/HubEssentials">Source code</a></li>
+                        <li><a href="http://spigotmc.org/resources/hubessentials.1703/">Spigot Page</a></li>
+                        <li><a href="hubessentials-generator.html">Animation generator</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-</li>
- 
-<li class="navTab resources Popup PopupControl PopupClosed PopupContainerControl">
-<a href="http://www.spigotmc.org/resources/" class="navLink">Resources</a>
-<a href="http://www.spigotmc.org/resources/" class="SplitCtrl" rel="Menu"></a>
+<!-- Container
+-------------------------------------------------------->
 
-</li>
-<li class="navTab wiki Popup PopupControl PopupClosed PopupContainerControl">
-<a href="http://www.spigotmc.org/wiki/" class="navLink">Wiki</a>
-<a href="http://www.spigotmc.org/wiki/" class="SplitCtrl" rel="Menu"></a>
-
-</li>
-<li class="navTab xfx_staff Popup PopupControl PopupClosed PopupContainerControl">
-<a href="XenStaff/" class="navLink">Team</a>
-<a href="XenStaff/" class="SplitCtrl" rel="Menu"></a>
-
-</li>
-<li class="navTab nodetab31 Popup PopupControl PopupClosed PopupContainerControl">
-<a href="http://www.spigotmc.org/link-forums/downloads.31/" class="navLink">Downloads</a>
-<a href="http://www.spigotmc.org/link-forums/downloads.31/" class="SplitCtrl" rel="Menu"></a>
-
-</li>
-<li class="navTab nodetab75 PopupClosed">
-<a href="http://www.spigotmc.org/link-forums/hub.75/" class="navLink">Hub</a>
-</li>
-<li class="navTab nodetab14 PopupClosed">
-<a href="http://www.spigotmc.org/link-forums/issues.14/" class="navLink">Issues</a>
-</li>
-<li class="navTab nodetab19 PopupClosed">
-<a href="http://www.spigotmc.org/pages/irc/" class="navLink">Chat</a>
-</li>
- 
-<li class="navTab members Popup PopupControl PopupClosed PopupContainerControl" style="display: list-item;">
-<a href="http://www.spigotmc.org/members/" class="navLink">Members</a>
-<a href="http://www.spigotmc.org/members/" class="SplitCtrl" rel="Menu"></a>
-
-</li>
- 
-<li class="navTab nodetab44 PopupClosed">
-<a href="http://www.spigotmc.org/link-forums/donate.44/" class="navLink">Donate</a>
-</li>
- 
-<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed PopupContainerControl" style="display: none;">
-<a rel="Menu" class="navLink NoPopupGadget"><i class="uix_icon uix_icon-navTrigger"></i><span class="hide menuIcon">Menu</span></a>
-
-</li>
- 
-
+    <div class="container">
+        <div class="text-center">
+            <img src="assets/images/me.png" style="height: 300px; width: 300px;">
+            <h1>raulsmail.github.io</h1>
+            <h3>Developer & Server Owner</h3>
+        </div>
+    </div>
 </div>
+<br>
+<div class="container">
+    <div class="rows">
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">My Github</div>
+                <div class="panel-body">
+                    You can find all of my current and old projects on my github page.
+                </div>
+                <br>
+                <div class="panel-footer">
+                    <div class="pull-right">
+                        <a class="btn btn-primary btn-sm" href="https://github.com/raulsmail">Visit</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">My Minecraft Server</div>
+                <div class="panel-body">
+                    NeoCrafters is a Minecraft server, that has been running 24/7 ever, please take a visit and enjoy.
+                </div>
+                <div class="panel-footer">
+                    <div class="pull-right">
+                        <a class="btn btn-primary btn-sm" href="https://neocrafters.es">Visit</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Contact Me</div>
+                <div class="panel-body">
+                    If you need to contact me, whether it'll be for guidance or work, please contact me via e-mail.
+                </div>
+                <br>
+                <div class="panel-footer">
+                    <div class="pull-right">
+                        <a class="btn btn-primary btn-sm" href="mailto:raulsmail00@gmail.com">E-Mail Me</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <hr>
+        <p>&copy; 2015 raulsmail. All Rights Reserved.<br />
+    </footer>
 </div>
-<span class="helper"></span>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</header>
+<!-- JavaScripts
+-------------------------------------------------------->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/animations.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
 </body>
 </html>
