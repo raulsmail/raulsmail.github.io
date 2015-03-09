@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HubEssentials - Animation Generator</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar
+------------------------------------------------------->
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">raulsmail.github.io</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/raulsmail">Github</a></li>
+            <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">HubEssentials <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://github.com/raulsmail/HubEssentials">Source code</a></li>
+                    <li><a href="http://spigotmc.org/resources/hubessentials.1703/">Spigot Page</a></li>
+                    <li class="active"><a href="hubessentials-generator.html">Animation generator</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Container
+------------------------------------------------------->
+<div class="container">
+
+    <!-- Error message
+    ------------------------------------------------------->
+    <div class="alert alert-danger" id="alert-box" hidden=true>
+        <strong>Uh oh!</strong> Something went wrong! Please reload the page.
+    </div>
+
+    <!-- Main Panel
+    ------------------------------------------------------->
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-lg-9">HubEssentials Animation Generator</div>
+                <div class="col-lg-3">Use HubEssentials config style:&nbsp;&nbsp;<input id="checkbox-output-style" type="checkbox" onchange="changeOutputStyle()" checked></div>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" onload="setType(TypeEnum.TYPE_LETTER)" onclick="setType(TypeEnum.TYPE_LETTER)" id="type-button-type-letter" class="btn btn-default active">Letter Type Animation</a>
+                    <a href="#" onclick="setType(TypeEnum.TYPE_WORD)" id="type-button-type-word" class="btn btn-default">Word Type Animation</a>
+                    <a href="#" onclick="setType(TypeEnum.COLOR_CHANGING)" id="type-button-color-changing" class="btn btn-default">Color changing animation</a>
+                </div>
+                <div id="div-titlemanager-output-settings" class="row">
+                    <br>
+                    <div class="col-lg-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Fade In</span>
+                            <input type="text" class="form-control" placeholder="Ticks" id="config-fade-in">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Stay</span>
+                            <input type="text" class="form-control" placeholder="Ticks" id="config-stay">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">Fade Out</span>
+                            <input type="text" class="form-control" placeholder="Ticks" id="config-fade-out">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">
+                                Animation Name
+                            </span>
+                            <input type="text" class="form-control" placeholder="My-Animation" id="config-name">
+                        </div>
+                    </div>
+                </div>
+                <div id="div-color-changing-animation" hidden=true>
+                    <br>
+                    <div class="input-group input-group-sm">
+                            <span class="input-group-addon">
+                                Colors (For next color use a comma! (,))
+                            </span>
+                        <input type="text" class="form-control" placeholder="&1,&2,&3,&a,&b,&c" id="animation-colors">
+                    </div>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" placeholder="Your animation text..." id="textbox-full-text" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="button-generate" onclick="generate()" type="button">Generate</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <textarea id="textarea-animation" style="width:100%; height:208px"></textarea>
+    </div>
+    <footer class="text-center">
+        <hr>
+        <p>&copy; 2015 raulsmail. All Rights Reserved.<br />
+    </footer>
+</div>
+<!-- JavaScripts
+------------------------------------------------------->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/animations.js"></script>
+</body>
+</html>
